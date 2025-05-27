@@ -1,0 +1,16 @@
+services:
+  airflow:
+    image: airflow_basic_image
+    container_name: airflow_basic
+    build: 
+      dockerfile: ./Dockerfile
+    develop:
+      watch:
+        - action: restart
+          path: ./airflow/airflow.cfg
+    volumes:
+      # - .airflow-venv:/root/.airflow-venv
+      - ./airflow:/home/afuser/airflow
+    ports:
+      - 8080:8080
+        

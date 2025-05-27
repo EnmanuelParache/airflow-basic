@@ -1,0 +1,16 @@
+{
+    "name": "airflow_basic_container_vscode",
+    "build": {
+        "dockerfile": "../Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.defaultInterpreterPath": "~/.airflow-venv/bin/python"
+            },
+            "extensions": [
+                "ms-python.vscode-pylance"
+            ]
+        }
+    }
+}

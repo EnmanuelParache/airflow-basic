@@ -1,0 +1,3 @@
+{
+    "python.defaultInterpreterPath": "~/.airflow-venv/bin/python"
+}

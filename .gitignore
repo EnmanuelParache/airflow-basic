@@ -1,0 +1,9 @@
+# Ignore airflow except dags
+airflow/*
+!airflow/dags
+
+# Cfg as it contains secrets
+airflow/airflow.cfg
+
+# Dags python cache
+airflow/dags/__pycache__
